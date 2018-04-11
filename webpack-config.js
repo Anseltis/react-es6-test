@@ -7,7 +7,8 @@ const paths = {
 };
 
 module.exports = {
-    entry: path.join(paths.src, 'index.js'),
+    devtool: 'inline-source-map',
+    entry: path.join(paths.src, 'index.jsx'),
     mode: 'development',
     devServer: {
         contentBase: paths.src,
