@@ -1,0 +1,10 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+.hello {
+  @extend .badge;
+  @extend .badge-light;
+
+  width: fit-content;
+  font-size: x-large;
+  border-radius: 10px;
+}

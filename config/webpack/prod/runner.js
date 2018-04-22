@@ -9,7 +9,8 @@ compiler.run((err, stats) => {
     }
     console.log(stats.toString({
         chunks: false,
-        colors: true
+        colors: true,
+        verbose: true
     }));
 });
 

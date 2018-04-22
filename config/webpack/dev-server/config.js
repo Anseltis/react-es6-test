@@ -1,6 +1,5 @@
 import * as path from 'path';
 import webpack from 'webpack';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 import { paths, port } from '../../../settings';
 import { config as baseConfig } from '../dev-config';
@@ -16,7 +15,8 @@ export const config = {
         contentBase: paths.src,
     },
     plugins: [
-        ...(baseConfig.plugins || []),
+        ...baseConfig.plugins,
+        new webpack.NamedModulesPlugin(),
         new webpack.HotModuleReplacementPlugin()
     ]
 };

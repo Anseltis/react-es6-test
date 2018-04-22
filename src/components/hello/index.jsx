@@ -1,10 +1,11 @@
 import * as React from 'react';
-import { Component } from 'react';
 
-export class Hello extends Component {
-  render() {
+import './style.scss';
+
+export class Hello extends React.Component {
+  render () {
     return (
-      <div>
+      <div className='hello'>
         Hello from react es6+7
       </div>
     );
