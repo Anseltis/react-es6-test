@@ -1,0 +1,13 @@
+{
+    "presets": [
+        "@babel/preset-react",
+        "@babel/preset-es2015",
+        "@babel/preset-es2016",
+        "@babel/preset-es2017"
+    ],
+    "plugins": [
+        "@babel/plugin-proposal-function-bind",
+        "@babel/plugin-proposal-class-properties",
+        "@babel/plugin-proposal-object-rest-spread"
+    ]
+}

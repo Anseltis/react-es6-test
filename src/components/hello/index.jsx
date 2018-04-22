@@ -5,7 +5,7 @@ export class Hello extends Component {
   render() {
     return (
       <div>
-        Hello from react es6
+        Hello from react es6+7
       </div>
     );
   }
